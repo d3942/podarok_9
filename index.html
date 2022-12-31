@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С новым годом🎁</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- countdown-wrapper -->
+    <div class="countdown-wrapper">
+
+
+        <!-- этап 1 -->
+        <h1 class="title">Кто это тут подглядыват ? <br>👀<br>Раньше 
+        времени</h1>
+
+        <!-- этап 2 -->
+        <!-- <h1 class="title">Любимая Позадравляю тебя с новым годом</h1>
+        <h1 class="title">в ближайшее время тут появиться твой подарок🎁</h1>
+        <h1 class="title">с любовью ❤️<br>Твой муж</h1>
+        <h1 class="title">До твоего подарка осталось:</h1> -->
+        
+        <!-- этап 3 -->
+        <!-- <h1 class="title">Поздравляем с новым родная 🥳</h1>
+        <h2 class="title">Любимая вот твой подарок ❤️</h2>
+        <h1 class="title">https://t.me/+5BnFC5AA96U3YmFi</h1> -->
+
+        <div id="year" class="year"></div>
+        
+        <!-- этап 2 -->
+        <!-- <h1><div id="redirectTimer" >10</div></h1>
+      
+        <div class="preloader" id="preloader">
+            <div class="lds-ripple"><div></div><div></div></div>
+        </div>
+    </div> -->
+    <!-- // countdown-wrapper -->
+
+    <script type="text/javascript">
+        function timer(){
+        var obj=document.getElementById('redirectTimer');
+        obj.innerHTML--;
+         
+        if(obj.innerHTML==0){
+        document.location.href='podarok.html';
+        setTimeout(function(){},1000);
+        }
+        else
+        {
+        setTimeout(timer,1000);
+        }
+        }
+        setTimeout(timer,1000);
+        </script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
